@@ -1,19 +1,8 @@
-#### Latest Builds
-
-##### Latest AppVeyor build
-
-|Latest Build|
-|:-:|
-|[![Build status](https://ci.appveyor.com/api/projects/status/inf2kinljmp8a5ul?svg=true)](https://ci.appveyor.com/project/TomGrobbe/vmenu)|
-
---------
+# SnailyMenu
+SnailyMenu is server sided menu for FiveM servers, including full\* permission support.
 
 
-# vMenu
-vMenu is server sided menu for FiveM servers, including full\* permission support.
-
-
-\*(Some features do not have permissions support as they are either harmless or it'd just be silly to deny them. However, they will be disabled if you deny access to the submenu that they are a part of (eg: unlimited stamina in Player Options will be disabled if you deny `vMenu.PlayerOptions.Menu`.))
+\*(Some features do not have permissions support. However, they will be disabled if you deny access to the submenu that they are a part of (eg: unlimited stamina in Player Options will be disabled if you deny `vMenu.PlayerOptions.Menu`.))
 
 --------
 
@@ -26,28 +15,21 @@ Click [here](https://github.com/TomGrobbe/vMenu/releases) to go to the releases 
 --------
 
 ## Installation
-Please follow the instructions over at the [vMenu docs](https://docs.vespura.com/vmenu/installation)
+Please follow the instructions over at the [SnailyMenu docs](https://docs.snaily.run/snailymenu/installation)
 
 ## Zap Hosting
 If you're using Zap Hosting, you may find that moving the `permissions.cfg` file to the same folder as your `server.cfg` file may not work correctly (it could get reset every time you restart your server).
 
-If this is the case, leave your `permissions.cfg` file here: `/resources/vMenu/config/permissions.cfg` and add the following to the very top of your server.cfg file: `exec resources/vMenu/config/permissions.cfg` (instead of `exec permissions.cfg`).
+If this is the case, leave your `permissions.cfg` file here: `/resources/SnailyMenu/config/permissions.cfg` and add the following to the very top of your server.cfg file: `exec resources/SnailyMenu/config/permissions.cfg` (instead of `exec permissions.cfg`).
 
-You can also use ZAP Hosting's one-click installer for vMenu. Get a ZAP-Hosting server with a 10% lifetime discount [HERE](https://zap-hosting.com/vespura) and make sure to use `Vespura-a-3715` at checkout.
-
---------
-
-## Support
-If you like my work, please consider supporting me on [**Patreon**](https://www.patreon.com/vespura). I've put a _lot_ of my time and hard work into these and other projects.
-
+You can also use ZAP Hosting's one-click installer for SnailyMenu.
 --------
 
 ## Trouble shooting & support
-Take a look at the docs first of all. I will ignore you if your question is answered on the docs or the forum topic.
 
-- [docs](https://docs.vespura.com/vmenu/)
-- [forum topic](https://vespura.com/vmenu)
-- [discord](https://vespura.com/discord)
+- [docs](https://docs.snaily.run/SnailyMenu/)
+- [discord](https://snaily.run/discord)
+- [support](https://snaily.run/support)
 
 
 --------
@@ -63,22 +45,15 @@ Click [here](https://docs.vespura.com/vmenu/configuration) for configuration opt
 
 
 ## MenuAPI
-Starting from vMenu v2.1.0, vMenu will be using [MenuAPI (MAPI)](https://github.com/TomGrobbe/MenuAPI), a custom menu API designed specifically for vMenu by me.
+SnailyMenu will be using [MenuAPI (MAPI)](https://github.com/TomGrobbe/MenuAPI), a custom menu API designed by [TomGrobbe](https://www.vespura.com).
 
-vMenu v2.0.0 and earlier was [using a modified version of NativeUI](https://github.com/TomGrobbe/NativeUI), originally by [Guad](https://github.com/Guad/NativeUI), but converted to FiveM by the CitizenFX Collectives and myself (updated/refactored).
 
 
 --------
 
 ## License
-**For an updated license, check the license.md file. That file will always overrule anything mentioned in the readme.md**
+**For an updated license, check the license.md file. This file will always overrule anything mentioned in the readme.md**
 
 
-Tom Grobbe - https://www.vespura.com/
-
-Copyright © 2017-2020
-
-----
-
-You can use and edit this code to your liking. However don't ever claim it to be your own code and always provide proper credit.
-I will, however, not help you if you want to modify my code.
+Snaily is a subsiadiary of [Lardum](https://www.lardum.net).
+Copyright © 2021 [TomGrobbe](https://www.vespura.com) & [Lardum](https://www.lardum.net). All rights reserved.
